@@ -27,6 +27,10 @@ $(document).ready(function(){
 		"Golden Apatite Crystal",
 		"Morrisonite Jasper Rough Crystal",
 		"Cats Eye Moonstone Cabochon",
+		"Aqua Aura Crystal Pair",
+		"Dendritic Agate Rough Crystal",
+		"Ruby Crystal Rough Stone",
+		"Shattuckite with Chrysocolla, Malachite, and Diaptase"
 	]
 	var crystalImgs= [
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/171130.jpg",
@@ -38,6 +42,10 @@ $(document).ready(function(){
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/173246.jpg",
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/172137.jpg",
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/3/130320a.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/151257_2.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/172761.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/2/921602.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/170963.jpg",
 	]
 
 	var crystalURLs=[
@@ -50,6 +58,10 @@ $(document).ready(function(){
 		"https://www.crystalvaults.com/173246",
 		"https://www.crystalvaults.com/172137",
 		"https://www.crystalvaults.com/130320",
+		"https://www.crystalvaults.com/151257",
+		"https://www.crystalvaults.com/172761",
+		"https://www.crystalvaults.com/921602",
+		"https://www.crystalvaults.com/170963",
 	]
 	//what all of the buttons
 
@@ -89,24 +101,28 @@ $(document).ready(function(){
 
 		$("#crystal-one").val(randoCrystalOne);
 		$("#crystal-img-one").attr('src', randoCrystalImgs[0]);
+		$("#crystal-caption-one").text(randoCrystalNames[0]);
 
 		randoCrystalTwo = Math.floor((Math.random()*(upperLimit/5)) + 1);
 		console.log(randoCrystalTwo);
 
 		$("#crystal-two").val(randoCrystalTwo);
 		$("#crystal-img-two").attr('src', randoCrystalImgs[1]);
+		$("#crystal-caption-two").text(randoCrystalNames[1]);
 
 		randoCrystalThree = Math.floor((Math.random()*(upperLimit/5)) + 1);
 		console.log(randoCrystalThree);
 
 		$("#crystal-three").val(randoCrystalThree);
 		$("#crystal-img-three").attr('src', randoCrystalImgs[2]);
+		$("#crystal-caption-three").text(randoCrystalNames[2]);
 
 		randoCrystalFour = Math.floor((Math.random()*(upperLimit/5)) + 1);
 		console.log(randoCrystalFour);				
 
 		$("#crystal-four").val(randoCrystalFour);
 		$("#crystal-img-four").attr('src', randoCrystalImgs[3]);
+		$("#crystal-caption-four").text(randoCrystalNames[3]);
 	};
 
 	//function from the on click that will add the value of the crystal to the base value
@@ -141,14 +157,16 @@ $(document).ready(function(){
 	function startGame(){
 		randoNumber=00;
 		userNumber=00;
-		var randoCrystalNames = [];
-		var randoCrystalImgs = [];
-		var randoCrystalLinks = [];
+		randoCrystalNames = [];
+		randoCrystalImgs = [];
+		randoCrystalLinks = [];
 		console.log(userNumber)
 		$("#random-number .panel-body, #user-number .panel-body").empty();
 		
 		randoGen();
 		assignCrystals();
+		changeCrystalImg();
+		console.log(randoCrystalNames);
 	};
 
 	startGame();
