@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crystals Collector</title>
+
+
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- local stylesheet-->
+  <link rel="stylesheet" type="text/css" href="Assets/style.css">
+
+</head>
+<body>
+	<div id="title" class="jumbotron">
+		<h1>Crystals Collector</h1>
+		<h3>Check console to see the madness!</h2>
+	</div>
+	<div id="instructions" class="container-fluid container">
+		<p>
+			You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. 
+
+			You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.
+
+			The value of each crystal is hidden from you until you click on it.
+
+			Each time when the game starts, the game will change the values of each crystal.
+		</p>
+	</div>
+<div class="container-fluid container">
+	<div class="row col-md-12">
+	
+		<section id="random-number" class="number col-md-6">
+			<div class="panel-heading">
+				<h3> Match This Number </h3>
+			</div>
+			<div class="panel-body">
+			<p>
+00
+
+			</p>
+			</div>
+		</section>
+	
+		<button id="crystal-one" class="crystal col-md-2 thumbnail" value="">
+				<div class="panel-body">
+					<img id="crystal-img-one" class="crystalimg" src="https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/6/161017.jpg">
+				</div>
+				<div class="caption">
+					<h6>Rutilated Quartz Point</h6>
+				</div>
+		</button>
+
+		<button id="crystal-two" class="crystal col-md-2 thumbnail" value="">
+				<div class="panel-body">
+					<img id="crystal-img-two" class="crystalimg" src="https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/172550.jpg">
+				</div>
+				<div class="caption">
+					<h6>Galena Spinel Law Twin</h6>
+				</div>
+		</button>
+
+	</div>
+
+	<div class="row col-md-12">
+
+		<section id="user-number" class="number col-md-6">
+			<div class="panel-heading">
+				<h3> Your Number </h3>
+			</div>
+			<div class="panel-body">
+			<p>
+00
+
+			</p>
+			</div>
+		</section>
+
+		<button id="crystal-three" class="crystal col-md-2 thumbnail" value="">
+				<div class="panel-body">
+					<img id="crystal-img-three" class="crystalimg" src="https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/4/142292.jpg">
+				</div>
+				<div class="caption">
+					<h6>Aquamarine Crystal</h6>
+				</div>
+		</button>
+
+		<button id="crystal-four" class="crystal col-md-2 thumbnail" value="">
+				<div class="panel-body">
+					<img id="crystal-img-four" class="crystalimg" src="https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/2/921151.jpg">
+				</div>
+				<div class="caption">
+					<h6>Rose Aura Quartz</h6>
+				</div>
+		</button>
+
+	</div>
+
+
+	<div class="row col-md-12">
+		<article id="wins" class="number col-md-6">
+			<div class="panel-heading">
+				<h3> WINS </h3>
+			</div>
+			<div class="panel-body">
+			<p>
+00
+
+			</p>
+			</div>
+		</article>
+
+		<article id="losses" class="number col-md-6">
+			<div class="panel-heading">
+				<h3> LOSSES </h3>
+			</div>
+			<div class="panel-body">
+			<p>
+00
+
+			</p>
+			</div>
+		</article>
+	</div>
+</div>
+  <script src="Assets/script.js"></script>
+
+</body>
+</html>
