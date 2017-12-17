@@ -30,7 +30,12 @@ $(document).ready(function(){
 		"Aqua Aura Crystal Pair",
 		"Dendritic Agate Rough Crystal",
 		"Ruby Crystal Rough Stone",
-		"Shattuckite with Chrysocolla, Malachite, and Diaptase"
+		"Shattuckite with Chrysocolla, Malachite, and Diaptase",
+		"Shungite",
+		"Rhondite",
+		"Sugilite",
+		"Vanadinite Cluster",
+		"Sodalite",
 	]
 	var crystalImgs= [
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/171130.jpg",
@@ -46,6 +51,11 @@ $(document).ready(function(){
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/172761.jpg",
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/9/2/921602.jpg",
 		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/170963.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/172731.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/170509.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/172047.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/173627.jpg",
+		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/170340.jpg",
 	]
 
 	var crystalURLs=[
@@ -62,6 +72,11 @@ $(document).ready(function(){
 		"https://www.crystalvaults.com/172761",
 		"https://www.crystalvaults.com/921602",
 		"https://www.crystalvaults.com/170963",
+		"https://www.crystalvaults.com/172731",
+		"https://www.crystalvaults.com/170509",
+		"https://www.crystalvaults.com/172047",
+		"https://www.crystalvaults.com/173627",
+		"https://www.crystalvaults.com/170340",
 	]
 	//what all of the buttons
 
@@ -177,30 +192,3 @@ $(document).ready(function(){
 
 }); //end of document.ready 
 
-
-
-	crystalNames = [
-		"Chalcedony Rose",
-		"Azurite Specimen",
-		"Polished Chrysoprase Crystal",
-		"Blue Kyanite Crystal",
-		"Amazonite Crystal",
-		"Peacock Ore Crystal",
-	]
-	crystalImgs= [
-		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/171130.jpg",
-		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/150983.jpg",
-		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/171596.jpg",
-		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/5/152552.jpg",
-		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/6/160519.jpg",
-		"https://www.crystalvaults.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/7/171842.jpg",
-	]
-
-	crystalURLs=[
-		"https://www.crystalvaults.com/171130",
-		"https://www.crystalvaults.com/150983",
-		"https://www.crystalvaults.com/171596",
-		"https://www.crystalvaults.com/152552",
-		"https://www.crystalvaults.com/160519",
-		"https://www.crystalvaults.com/171842",
-	]
